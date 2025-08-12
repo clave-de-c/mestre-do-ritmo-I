@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestre do Ritmo I</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="content-wrapper">
+    <div id="level-selection-screen">
+        <h1>Mestre do Ritmo I</h1>
+        <div id="level-grid"></div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <header class="game-header">
+            <button id="back-to-levels-button">← Fases</button>
+            <div class="hud">
+                <div class="hud-item">
+                    <span>NÍVEL</span>
+                    <span id="level-display">1</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="game-area">
+            <div id="rhythm-guide" class="hidden"></div>
+            <div id="status-display">Observe o Ritmo</div>
+            <button id="clap-button" disabled>
+                ✋<span>ESPAÇO</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="modal-screen" class="modal-screen hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">Mestre do Ritmo</h2>
+            <div id="modal-stars-container"></div>
+            <div id="modal-rhythm-preview"></div>
+            <p id="modal-text"></p>
+            <button id="modal-button">Começar</button>
+        </div>
+    </div>
+</div>
+    
+<footer class="main-footer">
+    <p>Desenvolvido por <strong>Clave de C</strong></p>
+    <div class="footer-links">
+        <a href="https://www.clavedec.com.br" target="_blank">www.clavedec.com.br</a>
+        <span>|</span>
+        <a href="https://www.instagram.com/clavedec.oficial" target="_blank">@clavedec.oficial</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
